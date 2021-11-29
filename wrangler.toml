@@ -1,0 +1,18 @@
+name = "serverutils"
+type = "javascript"
+route = ""
+account_id = "326bd0a4b72213bcf7f6cdff5e7b3313"
+zone_id = "528d8ede5e2c958e299793b84e68a89f"
+compatibility_flags = []
+workers_dev = true
+compatibility_date = "2021-11-25"
+
+[build]
+command = "yarn install && npm run build"
+
+[build.upload]
+format = "service-worker"
+
+[site]
+bucket = "./build"
+entry-point = "workers-site"

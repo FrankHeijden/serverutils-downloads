@@ -1,0 +1,51 @@
+.Platform {
+    padding: 5vmin;
+    max-width: 250px;
+}
+
+.Platform-logo {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    height: 25vmin;
+    width: 25vmin;
+    object-fit: contain;
+}
+
+.Platform-hash-title {
+    font-size: calc(1.5vmin);
+    font-weight: bold;
+    color: darkgray;
+    margin-bottom: 0;
+}
+
+.Platform-hash {
+    font-size: calc(1.25vmin);
+    color: darkgray;
+    word-break: break-all;
+    margin: 0;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .Platform {
+        padding: 4px;
+    }
+
+    .Platform-logo {
+        display: inline-block;
+    }
+
+    .Platform-button {
+        left: 20px;
+        bottom: 50px;
+    }
+
+    .Platform-hash-title {
+        margin-top: -5vmin;
+        font-size: calc(3vmin);
+    }
+
+    .Platform-hash {
+        font-size: calc(2.5vmin);
+    }
+}
