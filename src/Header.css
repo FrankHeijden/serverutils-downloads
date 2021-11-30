@@ -1,0 +1,31 @@
+.Header {
+    position: absolute;
+    right: 0.5vmin;
+    overflow: hidden;
+}
+
+.github-fork-ribbon:before {
+    background-color: #23272f;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .Header {
+        right: 3vmin;
+        bottom: 3vmin;
+    }
+
+    .github-fork-ribbon.left-top {
+        top: auto;
+        bottom: 0;
+    }
+
+    .github-fork-ribbon.left-top:before, .github-fork-ribbon.left-top:after {
+        top: auto;
+        bottom: 3.23em;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}

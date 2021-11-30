@@ -5,9 +5,11 @@ import './index.css';
 
 import Downloads from './Downloads';
 import NotFound from './NotFound';
+import Header from "./Header";
 
 const App = () => (
   <React.StrictMode>
+    <Header />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Downloads />} />

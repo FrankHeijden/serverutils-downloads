@@ -1,0 +1,20 @@
+.HeaderElement {
+    float: right;
+    padding: 2vmin;
+}
+
+.HeaderElement-logo {
+    width: 24px;
+    height: 24px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .HeaderElement {
+        padding: 3vmin;
+    }
+
+    .HeaderElement-logo {
+        width: 28px;
+        height: 28px;
+    }
+}
